@@ -2,9 +2,82 @@
 <html lang="en">
   <head>
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/327ed40b7a.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Amsterdam Travel Guide</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <button type="menu" id="toggle"><i class="fas fa-bars"></i></button>
+      <img src="logo.png" alt="Travel and Leisure Logo" id="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">World's Best</a></li>
+          <li><a href="#">A-List</a></li>
+          <li><a href="#">Trip Ideas</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Hotels + Resorts</a></li>
+          <li><a href="#">Cruises</a></li>
+          <li><a href="#" id="subscribe">Subscribe</a></li>
+        </ul>
+      </nav>
+      <button type="submit" id="search"><i class="fas fa-search"></i></button>
+    </header>
+    <div id="advertisement">
+      <img src="banner-ad.jpg" alt="Banner Ad" id="banner-ad" />
+    </div>
+    <main>
+      <section id="hero">
+        <ul id="site-path">
+          <li>Home</li>
+          <li>/</li>
+          <li>Destinations</li>
+          <li>/</li>
+          <li>Europe</li>
+          <li>/</li>
+          <li>The Netherlands</li>
+          <li>/</li>
+          <li id="current-location">Amsterdam</li>
+        </ul>
+        <div id="hero-header">
+          <h1>Amsterdam Travel Guide</h1>
+        </div>
+      </section>
+      <section id="to-do">
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Restaurants</a></li>
+          <li><a href="#">Bars</a></li>
+          <li><a href="#">Things To Do</a></li>
+          <li><a href="#">Shops</a></li>
+          <li><a href="#">Free App</a></li>
+        </ul>
+        <p>
+          With 60 miles of canals and nearly 7,000 buildings dating from the
+          18th century or earlier, Amsterdam is one of Europe’s best preserved
+          ci... <a href="#"> Read More</a>
+        </p>
+        <div id="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-google-plus"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
