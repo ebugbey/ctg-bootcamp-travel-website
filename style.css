@@ -179,6 +179,7 @@ h1 {
 #socials a i {
   margin: 0.3rem;
   color: rgb(68, 136, 165);
+  font-size: 2rem;
 }
 
 #socials a i:hover {
