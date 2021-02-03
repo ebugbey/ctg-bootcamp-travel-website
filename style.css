@@ -100,15 +100,26 @@ main {
 #site-path {
   height: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   list-style: none;
   background-color: rgba(0, 0, 0, 0.571);
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 0 27rem;
   margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #site-path {
+    display: none;
+  }
+}
+
+#site-path li:not(:last-child)::after {
+  content: "/";
+  margin: 0 0.5rem;
 }
 
 #current-location {
@@ -121,6 +132,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 h1 {
