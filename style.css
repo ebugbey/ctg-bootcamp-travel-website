@@ -97,8 +97,7 @@ header {
 }
 
 #banner-ad {
-  height: 5rem;
-  width: 48rem;
+  height: 7rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -243,14 +242,13 @@ h1 {
 
 #tiles {
   display: grid;
-  grid-template-columns: repeat(2, minmax(450px, 450px));
+  grid-template-columns: repeat(2, 450px);
   gap: 1rem;
 }
 
 @media only screen and (max-width: 1400px) {
   #tiles {
-    grid-template-columns: none;
-    width: 900px;
+    grid-template-columns: 1fr;
   }
 
   .visit-tile,
