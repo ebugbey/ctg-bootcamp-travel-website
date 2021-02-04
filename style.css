@@ -8,68 +8,89 @@ body {
 }
 header {
   background-color: white;
-  color: black;
   height: 3rem;
   box-shadow: 0px 5px 16px -15px rgba(0, 0, 0, 0.63);
   display: flex;
-  justify-content: baseline;
+  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   position: sticky;
   top: 0;
+  z-index: 3;
+  padding: 0 1rem;
 }
 
-#toggle {
-  height: 1.7rem;
-  background-color: white;
+#header-left {
+  display: flex;
+  gap: 3rem;
   align-items: center;
-  margin-top: 0.7rem;
-  margin-left: 1rem;
-  border: none;
-}
-#logo {
-  height: 3rem;
-  margin-left: 2.5rem;
-  margin-top: 0rem;
 }
 
-nav ul {
+#hamburger-menu {
+  background-color: white;
+  border: none;
+  height: 3rem;
+}
+
+#hamburger-menu i {
+  font-size: 1.3rem;
+}
+
+#logo {
+  margin: 0;
+  height: 3rem;
+}
+
+#header-right {
+  display: flex;
+  gap: 4rem;
+}
+
+#right-nav-links {
   font-size: 0.8rem;
   list-style: none;
   font-weight: bold;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin: 0;
-  margin-left: 60rem;
   padding: 0;
+  gap: 1.3rem;
 }
 
-nav ul a {
+#right-nav-links a {
   text-decoration: none;
   color: #676c6c;
   display: inline-block;
-  padding: 1rem;
 }
 
-nav ul a:hover {
+#right-nav-links a:hover {
   color: rgb(165, 165, 165);
 }
 
-#subscribe {
+#right-nav-links #subscribe {
   color: #b2cfcc;
 }
 
 #search {
-  height: 2rem;
   align-items: center;
-  margin: 0.5rem;
-  margin-right: 1.3rem;
-  margin-left: auto;
   background-color: white;
   border: none;
 }
 
-#advertisement {
+#search i {
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  #right-nav-links {
+    display: none;
+  }
+  /* How do to?: logo floats to middle, no change to hambuger-menu or search
+*/
+}
+
+#advertisement-1 {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
@@ -78,6 +99,12 @@ nav ul a:hover {
 #banner-ad {
   height: 5rem;
   width: 48rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #advertisement-1 {
+    display: none;
+  }
 }
 
 main {
@@ -196,4 +223,98 @@ h1 {
 
 #socials a i:hover {
   color: rgb(251, 110, 58);
+}
+
+#visit {
+  font-family: "Alegreya", serif;
+  margin: 0 3rem;
+}
+
+#visit-header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+#visit-content {
+  display: flex;
+}
+
+#tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(450px, 450px));
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  #tiles {
+    grid-template-columns: none;
+    width: 900px;
+  }
+
+  .visit-tile,
+  .tile-text {
+    width: 100%;
+
+    /* Get the tiles to take up the whole space */
+  }
+}
+
+.tile-text h4 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.tile-text p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.visit-tile {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tile-icon {
+  display: flex;
+  width: 15%;
+  justify-content: center;
+}
+.tile-icon i {
+  color: #b2cfcc;
+  font-size: 3rem;
+}
+
+.tile-text {
+  max-width: 350px;
+}
+
+#prong {
+  text-decoration: none;
+  color: rgb(68, 136, 165);
+}
+
+#advertisement-2 {
+  display: flex;
+  background-color: rgba(211, 211, 211, 0.181);
+  margin-left: auto;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  align-items: flex-start;
+}
+
+#bk-ad {
+  width: 300px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #advertisement-2 {
+    display: none;
+
+    /* Get the tiles to take up the whole space */
+  }
 }

@@ -21,10 +21,14 @@
   </head>
   <body>
     <header>
-      <button type="menu" id="toggle"><i class="fas fa-bars"></i></button>
-      <img src="logo.png" alt="Travel and Leisure Logo" id="logo" />
-      <nav>
-        <ul>
+      <div id="header-left">
+        <button id="hamburger-menu" type="menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <img src="logo.png" alt="Travel and Leisure Logo" id="logo" />
+      </div>
+      <nav id="header-right">
+        <ul id="right-nav-links">
           <li><a href="#">World's Best</a></li>
           <li><a href="#">A-List</a></li>
           <li><a href="#">Trip Ideas</a></li>
@@ -33,10 +37,10 @@
           <li><a href="#">Cruises</a></li>
           <li><a href="#" id="subscribe">Subscribe</a></li>
         </ul>
+        <button type="submit" id="search"><i class="fas fa-search"></i></button>
       </nav>
-      <button type="submit" id="search"><i class="fas fa-search"></i></button>
     </header>
-    <div id="advertisement">
+    <div id="advertisement-1">
       <img src="banner-ad.jpg" alt="Banner Ad" id="banner-ad" />
     </div>
     <main>
@@ -72,6 +76,87 @@
           <a href="#"><i class="fab fa-twitter-square"></i></a>
           <a href="#"><i class="fab fa-google-plus"></i></a>
           <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+      </section>
+      <section id="visit">
+        <div id="visit-header"><h2>Visit Amsterdam, the Netherlands</h2>
+        </div>
+        <div id="visit-content">
+          <div id="tiles">
+            <div class="visit-tile">
+              <div class="tile-icon"><i class="fas fa-calendar-alt"></i></div>
+              <span class="tile-text">
+                <h4>Best Time To Visit</h4>
+                <p>
+                  July and August are popular—and busy. If you want to see the
+                  tulips, come mid-April to early May. You’ll find better deals
+                  and quieter crowds October to March, with the exception of New
+                  Year’s Eve. This is a unique and riotous celebration in
+                  Amsterdam, and well worth experiencing.
+                </p>
+              </span>
+            </div>
+            <div class="visit-tile">
+              <div class="tile-icon"><i class="fas fa-subway"></i></div>
+              <span class="tile-text">
+                <h4>Amsterdam Transportation</h4>
+                <p>
+                  Amsterdam is compact, so walking or renting bikes to make use of
+                  the great bike lanes is easy. Yet public transport (trams,
+                  metros, and buses) also is excellent. Buy a chip card at a
+                  ticket vending machine or counter, or ask the driver for a
+                  tourist pass (there are one- to seven-day cards starting at $8).
+                </p>
+              </span>
+            </div>
+            <div class="visit-tile">
+              <div class="tile-icon"><i class="fas fa-cloud-sun"></i></div>
+              <span class="tile-text">
+                <h4>Amsterdam Weather</h4>
+                <p>
+                  August is the hottest month, with an average high of 63°F
+                  (17°C), and the coldest is January, with an average high of 37°F
+                  (17°C).
+                </p>
+              </span>
+            </div>
+            <div class="visit-tile">
+              <div class="tile-icon"><i class="far fa-lightbulb"></i></div>
+              <span class="tile-text">
+                <h4>Know Before Visiting</h4>
+                <p>
+                  Some attractions (especially the Van Gogh Museum and Anne Frank
+                  House) get very busy, especially in summer, so booking a ticket
+                  and time to visit in advance. The city is generally safe, but
+                  pickpockets operate widely; be careful on the tram and at the
+                  market.
+                </p>
+              </span>
+            </div>
+            <div class="visit-tile">
+              <div class="tile-icon"><i class="fas fa-globe"></i></div>
+              <span class="tile-text">
+                <h4>Language</h4>
+                <p>Dutch</p>
+              </span>
+            </div>
+            <div class="visit-tile">
+              <div class="tile-icon"><i class="fas fa-plug"></i></div>
+              <span class="tile-text">
+                <h4>Electric</h4>
+                <p><a id="prong" href="https://www.amazon.com/Ceptics-Grounded-Universal-Adapter-Europe/dp/B007YL84VA">Type C two-prong plug</p></a> 
+              </span>
+            </div>
+            <div class="visit-tile">
+              <div class="tile-icon"><i class="fas fa-euro-sign"></i></div>
+              <span class="tile-text">
+                <h4>Currency</h4>
+                <p>Euro (€)</p>
+              </span>
+            </div>
+          </div>
+          <span id="advertisement-2"><img id="bk-ad" src="bk-ad.png" alt="Burger King Ad">
+          </span>
         </div>
       </section>
     </main>
